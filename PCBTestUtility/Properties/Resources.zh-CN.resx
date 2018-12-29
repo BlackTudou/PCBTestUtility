@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Common_Error" xml:space="preserve">
+    <value>错误信息</value>
+  </data>
+  <data name="Common_Information" xml:space="preserve">
+    <value>提示信息</value>
+  </data>
+  <data name="Common_Warning" xml:space="preserve">
+    <value>警告信息</value>
+  </data>
+  <data name="ERR001" xml:space="preserve">
+    <value>不支持的命令。</value>
+  </data>
+  <data name="ERR003" xml:space="preserve">
+    <value>命令格式错。</value>
+  </data>
+  <data name="ERR004" xml:space="preserve">
+    <value>写只读寄存器。</value>
+  </data>
+  <data name="ERR005" xml:space="preserve">
+    <value>Write only but received read command.</value>
+  </data>
+  <data name="ERR600" xml:space="preserve">
+    <value>BCC Error.</value>
+  </data>
+  <data name="ERR601" xml:space="preserve">
+    <value>FLASH address illegal.</value>
+  </data>
+  <data name="ERR602" xml:space="preserve">
+    <value>Read length illegal.</value>
+  </data>
+  <data name="ERR603" xml:space="preserve">
+    <value>Erase sector failed.</value>
+  </data>
+  <data name="ERR604" xml:space="preserve">
+    <value>Read FLASH failed.</value>
+  </data>
+  <data name="ERR605" xml:space="preserve">
+    <value>Write FLASH failed.</value>
+  </data>
+  <data name="ERR606" xml:space="preserve">
+    <value>Write data illegal.</value>
+  </data>
+  <data name="ERR607" xml:space="preserve">
+    <value>Chip select code illegal.</value>
+  </data>
+  <data name="ERR608" xml:space="preserve">
+    <value>I2C address illegal.</value>
+  </data>
+  <data name="ERR609" xml:space="preserve">
+    <value>Read I2C failed.</value>
+  </data>
+  <data name="ERR610" xml:space="preserve">
+    <value>Write I2C failed.</value>
+  </data>
+  <data name="ERR611" xml:space="preserve">
+    <value>Force program length illegal.</value>
+  </data>
+  <data name="ERR612" xml:space="preserve">
+    <value>Voltage pin number error,should be in '1'-'5'.</value>
+  </data>
+  <data name="ERR613" xml:space="preserve">
+    <value>Current pin number error,should be in '1'-'2'.</value>
+  </data>
+  <data name="ERR614" xml:space="preserve">
+    <value>Range error,should be:'L','M' or 'S'.</value>
+  </data>
+  <data name="ERR615" xml:space="preserve">
+    <value>Phase error,should be:'A','B' or 'C'.</value>
+  </data>
+  <data name="ERR616" xml:space="preserve">
+    <value>Com port error,should be: '485_1'， '485_2'，'232'，'GK'，'HW' or 'PLC'.</value>
+  </data>
+  <data name="ERR617" xml:space="preserve">
+    <value>Baud rate error,should be:'300', '600', '1200', '2400', '4800', '9600', '19200' or '38400'.</value>
+  </data>
+  <data name="ERR618" xml:space="preserve">
+    <value>Data bit error, should be: '7'or '8'.</value>
+  </data>
+  <data name="ERR619" xml:space="preserve">
+    <value>Parity bit error，should be:'N','E' or 'O'.</value>
+  </data>
+  <data name="ERR620" xml:space="preserve">
+    <value>Open transparent channel failed.</value>
+  </data>
+  <data name="ERR621" xml:space="preserve">
+    <value>Relay number error,should be '0' - '21'.</value>
+  </data>
+  <data name="ERR622" xml:space="preserve">
+    <value>Relay action error,should be 'open' or 'close'.</value>
+  </data>
+  <data name="ForceProgramDialog_FramesCountFormat" xml:space="preserve">
+    <value>共有{0}帧，正在传输第{1}帧</value>
+  </data>
+  <data name="Item001" xml:space="preserve">
+    <value>A相功耗</value>
+  </data>
+  <data name="Item002" xml:space="preserve">
+    <value>B相功耗</value>
+  </data>
+  <data name="Item003" xml:space="preserve">
+    <value>C相功耗</value>
+  </data>
+  <data name="Item004" xml:space="preserve">
+    <value>电池电流（一）</value>
+  </data>
+  <data name="Item005" xml:space="preserve">
+    <value>电池电流（二）</value>
+  </data>
+  <data name="Item006" xml:space="preserve">
+    <value>背光电压</value>
+  </data>
+  <data name="Item007" xml:space="preserve">
+    <value>停抄电流</value>
+  </data>
+  <data name="Item008" xml:space="preserve">
+    <value>秒信号检测</value>
+  </data>
+  <data name="Item009" xml:space="preserve">
+    <value>强制编程</value>
+  </data>
+  <data name="Item010" xml:space="preserve">
+    <value>红外通讯</value>
+  </data>
+  <data name="Item011" xml:space="preserve">
+    <value>光口通讯</value>
+  </data>
+  <data name="Item012" xml:space="preserve">
+    <value>232通讯（一）</value>
+  </data>
+  <data name="Item013" xml:space="preserve">
+    <value>232通讯（二）</value>
+  </data>
+  <data name="Item014" xml:space="preserve">
+    <value>485通讯（一）</value>
+  </data>
+  <data name="Item015" xml:space="preserve">
+    <value>485通讯（二）</value>
+  </data>
+  <data name="Item016" xml:space="preserve">
+    <value>485通讯（三）</value>
+  </data>
+  <data name="Item017" xml:space="preserve">
+    <value>继电器控制（一）</value>
+  </data>
+  <data name="Item018" xml:space="preserve">
+    <value>继电器控制（二）</value>
+  </data>
+  <data name="Item019" xml:space="preserve">
+    <value>断路器控制（一）</value>
+  </data>
+  <data name="Item020" xml:space="preserve">
+    <value>断路器控制（二）</value>
+  </data>
+  <data name="Item021" xml:space="preserve">
+    <value>脉冲检测</value>
+  </data>
+  <data name="Item022" xml:space="preserve">
+    <value>外部磁场检测（一）</value>
+  </data>
+  <data name="Item023" xml:space="preserve">
+    <value>外部磁场检测（二）</value>
+  </data>
+  <data name="Item024" xml:space="preserve">
+    <value>RJ45口电压（一）</value>
+  </data>
+  <data name="Item025" xml:space="preserve">
+    <value>RJ45口电压（二）</value>
+  </data>
+  <data name="Item026" xml:space="preserve">
+    <value>5V电压</value>
+  </data>
+  <data name="Item027" xml:space="preserve">
+    <value>12V电压</value>
+  </data>
+  <data name="Item028" xml:space="preserve">
+    <value>485电压</value>
+  </data>
+  <data name="Item029" xml:space="preserve">
+    <value>辅助电源 5V电压</value>
+  </data>
+  <data name="Item030" xml:space="preserve">
+    <value>辅助电源 12V电压</value>
+  </data>
+  <data name="Item031" xml:space="preserve">
+    <value>辅助电源 485电压</value>
+  </data>
+  <data name="Landing_MeterTestItems" xml:space="preserve">
+    <value>电表线路板检测项目</value>
+  </data>
+  <data name="Landing_PowerTestItems" xml:space="preserve">
+    <value>开关电源板检测项目</value>
+  </data>
+  <data name="LoginDialog_LoginFailed" xml:space="preserve">
+    <value>输入的用户名和密码组合不正确。</value>
+  </data>
+  <data name="LoginDialog_PasswordEmpty" xml:space="preserve">
+    <value>密码不能为空。</value>
+  </data>
+  <data name="LoginDialog_UserNameEmpty" xml:space="preserve">
+    <value>用户名不能为空。</value>
+  </data>
+  <data name="MainForm_InputMeterNumber" xml:space="preserve">
+    <value>请输入表号</value>
+  </data>
+  <data name="MainForm_StartTest" xml:space="preserve">
+    <value>开始检测</value>
+  </data>
+  <data name="MainForm_StopTest" xml:space="preserve">
+    <value>停止检测</value>
+  </data>
+  <data name="PagerControl_FirstPage" xml:space="preserve">
+    <value>当前已经是首页。</value>
+  </data>
+  <data name="PagerControl_LastPage" xml:space="preserve">
+    <value>当前已经是最后一页。</value>
+  </data>
+  <data name="PagerControl_WrongPage" xml:space="preserve">
+    <value>请填写正确的页码。</value>
+  </data>
+  <data name="PcbTesterClient_NoBoard" xml:space="preserve">
+    <value>检测板未向上位机软件回复命令帧，请检查硬件连接或者检测板状态。</value>
+    <comment>未检测到检测板。</comment>
+  </data>
+  <data name="ProfileManager_NoProfile" xml:space="preserve">
+    <value>未找到该检测项的配置文件。</value>
+  </data>
+  <data name="Result_Failed" xml:space="preserve">
+    <value>不合格</value>
+  </data>
+  <data name="Result_Success" xml:space="preserve">
+    <value>合格</value>
+  </data>
+  <data name="SecondSignalCalibrationCommand_NoValue" xml:space="preserve">
+    <value>没有检测到秒信号值。</value>
+  </data>
+  <data name="SerialSettingsDialog_NoUsedPort" xml:space="preserve">
+    <value>未检测到串口。</value>
+  </data>
+  <data name="TestInterface_CollapseRecord" xml:space="preserve">
+    <value>收起检测记录</value>
+  </data>
+  <data name="TestInterface_ExpandRecord" xml:space="preserve">
+    <value>展开检测记录</value>
+  </data>
+  <data name="UserManageDialog_DeleteUser" xml:space="preserve">
+    <value>确定要删除该用户吗？</value>
+  </data>
+</root>

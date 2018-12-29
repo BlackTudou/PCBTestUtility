@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CommandList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Command Name="Phase A power consumption" TestTargetType="Meter">
+    <ResoureId>Item_PhaseAPowerConsumption</ResoureId>
+    <CommandType>MeasureActivePowerCommand</CommandType>
+    <ErrorControlType>RangeSelector</ErrorControlType>
+    <CommandParameter xsi:type="MeasureParameter">
+      <LowerLimit>0.6</LowerLimit>
+      <UpperLimit>1.0</UpperLimit>
+      <Phase>A</Phase>
+      <PinNumber>0</PinNumber>
+      <CurrentRange>All</CurrentRange>
+    </CommandParameter>
+  </Command>
+  <Command Name="Phase B power consumption" TestTargetType="Meter">
+    <ResoureId>Item_PhaseBPowerConsumption</ResoureId>
+    <CommandType>MeasureActivePowerCommand</CommandType>
+    <ErrorControlType>RangeSelector</ErrorControlType>
+    <CommandParameter xsi:type="MeasureParameter">
+      <LowerLimit>0.6</LowerLimit>
+      <UpperLimit>1.0</UpperLimit>
+      <Phase>B</Phase>
+      <PinNumber>0</PinNumber>
+      <CurrentRange>All</CurrentRange>
+    </CommandParameter>
+  </Command>
+  <Command Name="Phase C power consumption" TestTargetType="Meter">
+    <ResoureId>Item_PhaseCPowerConsumption</ResoureId>
+    <CommandType>MeasureActivePowerCommand</CommandType>
+    <ErrorControlType>RangeSelector</ErrorControlType>
+    <CommandParameter xsi:type="MeasureParameter">
+      <LowerLimit>0.6</LowerLimit>
+      <UpperLimit>1.0</UpperLimit>
+      <Phase>C</Phase>
+      <PinNumber>0</PinNumber>
+      <CurrentRange>All</CurrentRange>
+    </CommandParameter>
+  </Command>
+  <Command Name="Battery current (1)" TestTargetType="Meter">
+    <ResoureId>Item_BatteryCurrent1</ResoureId>
+    <CommandType>MeasureDCCurrentCommand</CommandType>
+    <ErrorControlType>RangeSelector</ErrorControlType>
+    <CommandParameter xsi:type="MeasureParameter">
+      <LowerLimit>0.6</LowerLimit>
+      <UpperLimit>1.0</UpperLimit>
+      <Phase>All</Phase>
+      <PinNumber>1</PinNumber>
+      <CurrentRange>Small</CurrentRange>
+    </CommandParameter>
+  </Command>
+  <Command Name="Battery current (2)" TestTargetType="Meter">
+    <ResoureId>Item_BatteryCurrent2</ResoureId>
+    <CommandType>MeasureDCCurrentCommand</CommandType>
+    <ErrorControlType>RangeSelector</ErrorControlType>
+    <CommandParameter xsi:type="MeasureParameter">
+      <LowerLimit>0.6</LowerLimit>
+      <UpperLimit>1.0</UpperLimit>
+      <Phase>All</Phase>
+      <PinNumber>2</PinNumber>
+      <CurrentRange>Medium</CurrentRange>
+    </CommandParameter>
+  </Command>
+  <Command Name="Backlight voltage" TestTargetType="Meter">
+    <ResoureId>Item_BacklightVoltage</ResoureId>
+    <CommandType>MeasureDCVoltageCommand</CommandType>
+    <ErrorControlType>RangeSelector</ErrorControlType>
+    <CommandParameter xsi:type="MeasureParameter">
+      <LowerLimit>0.6</LowerLimit>
+      <UpperLimit>1.0</UpperLimit>
+      <Phase>All</Phase>
+      <PinNumber>3</PinNumber>
+      <CurrentRange>All</CurrentRange>
+    </CommandParameter>
+  </Command>
+  <Command Name="Stop reading current" TestTargetType="Meter">
+    <ResoureId>Item_StopReadingCurrent</ResoureId>
+    <CommandType>MeasureDCCurrentCommand</CommandType>
+    <ErrorControlType>RangeSelector</ErrorControlType>
+    <CommandParameter xsi:type="MeasureParameter">
+      <LowerLimit>0.6</LowerLimit>
+      <UpperLimit>1.0</UpperLimit>
+      <Phase>All</Phase>
+      <PinNumber>1</PinNumber>
+      <CurrentRange>Medium</CurrentRange>
+    </CommandParameter>
+  </Command>
+  <Command Name="Second signal test" TestTargetType="Meter">
+    <ResoureId>Item_SecondSignalTest</ResoureId>
+    <CommandType>SecondSignalCalibrationCommand</CommandType>
+    <ErrorControlType>SecondSignalCalibration</ErrorControlType>
+    <CommandParameter xsi:type="SecondSignalCalibrationParameter">
+      <LowerLimit>0.6</LowerLimit>
+      <UpperLimit>1.0</UpperLimit>
+      <EnableActivateClockSignal>true</EnableActivateClockSignal>
+      <EnableAutoClockCompensation>true</EnableAutoClockCompensation>
+      <DelayTime>10</DelayTime>
+      <ClockSignalTestSeconds>0</ClockSignalTestSeconds>
+      <ComPort>RS485_1</ComPort>
+      <BaudRate>9600</BaudRate>
+      <DataBits>8</DataBits>
+      <Parity>None</Parity>
+    </CommandParameter>
+  </Command>
+  <Command Name="Force programming" TestTargetType="Meter">
+    <ResoureId>Item_ForceProgramming</ResoureId>
+    <CommandType>ForceProgramCommand</CommandType>
+    <ErrorControlType>ForceProgrammingParameter</ErrorControlType>
+    <CommandParameter xsi:type="ForceProgramCommandParameter">
+      <I2CChipSelect>160</I2CChipSelect>
+      <I2CAddress>1</I2CAddress>
+      <SpiAddress>1</SpiAddress>
+      <Length>32</Length>
+    </CommandParameter>
+  </Command>
+  <Command Name="Pulse test" TestTargetType="Meter">
+    <ResoureId>Item_PulseTest</ResoureId>
+    <CommandType>MeasurePulseCommand</CommandType>
+    <ErrorControlType>ForceProgrammingParameter</ErrorControlType>
+    <CommandParameter xsi:type="ForceProgramCommandParameter">
+      <I2CChipSelect>160</I2CChipSelect>
+      <I2CAddress>1</I2CAddress>
+      <SpiAddress>1</SpiAddress>
+      <Length>32</Length>
+    </CommandParameter>
+  </Command>
+</CommandList>

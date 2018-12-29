@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7D349C2F-2A52-48E2-97C6-4DE82C31BE88}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Microstar.Production.PCBTest</RootNamespace>
+    <AssemblyName>PCBTestUtility</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Microstar.Production.PCBTest.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>packages\log4net.2.0.8\lib\net40-client\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\CommandEngine.cs" />
+    <Compile Include="Business\Pagination.cs" />
+    <Compile Include="Business\ProfileManager - 复制.cs" />
+    <Compile Include="Business\ProfileManager.cs" />
+    <Compile Include="Command\CommandParameter\MeasurePulseParameter.cs" />
+    <Compile Include="Command\CommandParameter\SecondSignalCalibrationParameter.cs" />
+    <Compile Include="Command\MeterCommunicationHelper.cs" />
+    <Compile Include="Command\MinistryStandardFrames.cs" />
+    <Compile Include="Controls\ParameterControl\SecondSignalCalibration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ParameterControl\SecondSignalCalibration.Designer.cs">
+      <DependentUpon>SecondSignalCalibration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\Class1.cs" />
+    <Compile Include="Tools\ComplementCodeHelper.cs" />
+    <Compile Include="Tools\CRC8Helper.cs" />
+    <Compile Include="Tools\CSHelper.cs" />
+    <Compile Include="Tools\ForceProgramHelper.cs" />
+    <Compile Include="Utility\SerializeHelper.cs" />
+    <Compile Include="Business\TestRecordManager.cs" />
+    <Compile Include="Business\UserManager.cs" />
+    <Compile Include="DAL\UserDAO.cs" />
+    <Compile Include="DAL\TestRecordDAO.cs" />
+    <Compile Include="Model\CommandDescriptions.cs" />
+    <Compile Include="Utility\Arrays.cs" />
+    <Compile Include="Utility\Bits.cs" />
+    <Compile Include="Model\CommandDescription.cs" />
+    <Compile Include="Command\CommandParameter\ForceProgramCommandParameter.cs" />
+    <Compile Include="Command\RelayControlHelper.cs" />
+    <Compile Include="Command\WriteAddressCommandBase.cs" />
+    <Compile Include="Command\CommandParameter\AddressCommandParameter.cs" />
+    <Compile Include="Command\BreakerTestCommand.cs" />
+    <Compile Include="Command\CalibrationHelper.cs" />
+    <Compile Include="Command\CommandContext.cs" />
+    <Compile Include="Command\CommandParameter\CommandParameter.cs" />
+    <Compile Include="Command\CommandResult.cs" />
+    <Compile Include="Command\CommunicationPort.cs" />
+    <Compile Include="Command\CurrentRange.cs" />
+    <Compile Include="Command\CommandParameter\MeasureParameter.cs" />
+    <Compile Include="Command\EraseSPIFlashCommand.cs" />
+    <Compile Include="Command\ForceProgramCommand.cs" />
+    <Compile Include="Command\ForceProgramState.cs" />
+    <Compile Include="Command\ICommand.cs" />
+    <Compile Include="Command\MeasureACCurrentCommand.cs" />
+    <Compile Include="Command\MeasureActivePowerCommand.cs" />
+    <Compile Include="Command\MeasureACVoltageCommand.cs" />
+    <Compile Include="Command\MeasureDCCurrentCommand.cs" />
+    <Compile Include="Command\MeasureDCVoltageCommand.cs" />
+    <Compile Include="Command\MeasurePulseCommand.cs" />
+    <Compile Include="Command\ReadAddressCommandBase.cs" />
+    <Compile Include="Command\SecondSignalCalibrationCommand.cs" />
+    <Compile Include="Command\MeterCommunicationCommand.cs" />
+    <Compile Include="Command\CommandParameter\MeterCommunicationCommandParameter.cs" />
+    <Compile Include="Command\Phase.cs" />
+    <Compile Include="Command\CommandParameter\RangeCommandParameter.cs" />
+    <Compile Include="Command\ReadErrorMsgCommand.cs" />
+    <Compile Include="Command\ReadI2CCommand.cs" />
+    <Compile Include="Command\RelayControlAction.cs" />
+    <Compile Include="Command\RelayControlCommandParameter.cs" />
+    <Compile Include="Command\MeasureCommandBase.cs" />
+    <Compile Include="Command\WriteI2CCommand.cs" />
+    <Compile Include="Command\RelayControlCommand.cs" />
+    <Compile Include="Command\ReadSPIFlashCommand.cs" />
+    <Compile Include="Command\WriteSPIFlashCommand.cs" />
+    <Compile Include="Communication\CommunicationException.cs" />
+    <Compile Include="Communication\ErrorCodeInterpreter.cs" />
+    <Compile Include="Tools\Hex.cs" />
+    <Compile Include="Communication\IecBcc.cs" />
+    <Compile Include="Communication\PcbTesterClient.cs" />
+    <Compile Include="Communication\ReadResult.cs" />
+    <Compile Include="Communication\SerialOperation.cs" />
+    <Compile Include="Communication\TestItems.cs" />
+    <Compile Include="Communication\WriteError.cs" />
+    <Compile Include="Communication\WriteResult.cs" />
+    <Compile Include="Controls\ParameterControl\CommunicationControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ParameterControl\CommunicationControl.Designer.cs">
+      <DependentUpon>CommunicationControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ConnectionType.cs" />
+    <Compile Include="Controls\CurrentRating.cs" />
+    <Compile Include="Controls\CurrentConverter.cs" />
+    <Compile Include="Controls\ParameterControl\ForceProgrammingParameter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ParameterControl\ForceProgrammingParameter.Designer.cs">
+      <DependentUpon>ForceProgrammingParameter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ParameterControl\IParameterControl.cs" />
+    <Compile Include="Controls\MeterProtocal.cs" />
+    <Compile Include="Controls\Pager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Pager.Designer.cs">
+      <DependentUpon>Pager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ParameterControl\RangeSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ParameterControl\RangeSelector.Designer.cs">
+      <DependentUpon>RangeSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TestTargetType.cs" />
+    <Compile Include="Controls\TestItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TestItem.Designer.cs">
+      <DependentUpon>TestItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TestResult.cs" />
+    <Compile Include="Utility\DateTimes.cs" />
+    <Compile Include="Utility\Hex.cs" />
+    <Compile Include="Utility\LogHelper.cs" />
+    <Compile Include="Model\TestRecord.cs" />
+    <Compile Include="Model\TestItemInfo.cs" />
+    <Compile Include="Model\TestProject.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Utility\RandomExtensions.cs" />
+    <Compile Include="Utility\Reflections.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Tools\ApplicationSession.cs" />
+    <Compile Include="Tools\CRC32Helper.cs" />
+    <Compile Include="Tools\LogHelper.cs" />
+    <Compile Include="Tools\MessageBoxHelper.cs" />
+    <Compile Include="Tools\PropertySettingHelper.cs" />
+    <Compile Include="Tools\SqlHelper.cs" />
+    <Compile Include="Views\AdditionalCommandDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AdditionalCommandDialog.Designer.cs">
+      <DependentUpon>AdditionalCommandDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CheckRecord.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CheckRecord.Designer.cs">
+      <DependentUpon>CheckRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TestInterface.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TestInterface.Designer.cs">
+      <DependentUpon>TestInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ForceProgram.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ForceProgram.Designer.cs">
+      <DependentUpon>ForceProgram.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Landing.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Landing.Designer.cs">
+      <DependentUpon>Landing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DataViewer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DataViewer.Designer.cs">
+      <DependentUpon>DataViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ForceProgramDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ForceProgramDialog.Designer.cs">
+      <DependentUpon>ForceProgramDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\IniOperation.cs" />
+    <Compile Include="Views\LoginDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\LoginDialog.Designer.cs">
+      <DependentUpon>LoginDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\Parameter.cs" />
+    <Compile Include="Views\OptionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\OptionDialog.Designer.cs">
+      <DependentUpon>OptionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\SerialSettingsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\SerialSettingsDialog.Designer.cs">
+      <DependentUpon>SerialSettingsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TransmitBinFile.cs" />
+    <Compile Include="Views\UserAction.cs" />
+    <Compile Include="Views\UserEditDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UserEditDialog.Designer.cs">
+      <DependentUpon>UserEditDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserManageDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UserManageDialog.Designer.cs">
+      <DependentUpon>UserManageDialog.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controls\CheckRecord.zh-CN.resx">
+      <DependentUpon>CheckRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ParameterControl\CommunicationControl.resx">
+      <DependentUpon>CommunicationControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ForceProgram.zh-CN.resx">
+      <DependentUpon>ForceProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ParameterControl\ForceProgrammingParameter.resx">
+      <DependentUpon>ForceProgrammingParameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ParameterControl\ForceProgrammingParameter.zh-CN.resx">
+      <DependentUpon>ForceProgrammingParameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Landing.zh-CN.resx">
+      <DependentUpon>Landing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Pager.resx">
+      <DependentUpon>Pager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ParameterControl\RangeSelector.resx">
+      <DependentUpon>RangeSelector.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ParameterControl\SecondSignalCalibration.resx">
+      <DependentUpon>SecondSignalCalibration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TestInterface.zh-CN.resx">
+      <DependentUpon>TestInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TestItem.resx">
+      <DependentUpon>TestItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TestItem.zh-CN.resx">
+      <DependentUpon>TestItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.zh-CN.resx" />
+    <EmbeddedResource Include="Views\AdditionalCommandDialog.resx">
+      <DependentUpon>AdditionalCommandDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CheckRecord.resx">
+      <DependentUpon>CheckRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TestInterface.resx">
+      <DependentUpon>TestInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ForceProgram.resx">
+      <DependentUpon>ForceProgram.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Landing.resx">
+      <DependentUpon>Landing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AdditionalCommandDialog.zh-CN.resx">
+      <DependentUpon>AdditionalCommandDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DataViewer.resx">
+      <DependentUpon>DataViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DataViewer.zh-CN.resx">
+      <DependentUpon>DataViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ForceProgramDialog.resx">
+      <DependentUpon>ForceProgramDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ForceProgramDialog.zh-CN.resx">
+      <DependentUpon>ForceProgramDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LoginDialog.resx">
+      <DependentUpon>LoginDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\LoginDialog.zh-CN.resx">
+      <DependentUpon>LoginDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\MainForm.zh-CN.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\OptionDialog.resx">
+      <DependentUpon>OptionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Views\OptionDialog.zh-CN.resx">
+      <DependentUpon>OptionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SerialSettingsDialog.resx">
+      <DependentUpon>SerialSettingsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SerialSettingsDialog.zh-CN.resx">
+      <DependentUpon>SerialSettingsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserManageDialog.zh-CN.resx">
+      <DependentUpon>UserManageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserEditDialog.resx">
+      <DependentUpon>UserEditDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserManageDialog.resx">
+      <DependentUpon>UserManageDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserEditDialog.zh-CN.resx">
+      <DependentUpon>UserEditDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="log4net.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NOOK.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OK.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\000500-folder-document.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\900200-ok.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\900300-cancel.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5-121204193R5-50.gif" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Xml\TestFunction.xml">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

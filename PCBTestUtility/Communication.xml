@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Communication xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ComPort="RS232_1">
+  <BaudRate>9600</BaudRate>
+  <DataBits>8</DataBits>
+  <Parity>Even</Parity>
+</Communication>

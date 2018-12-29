@@ -1,0 +1,544 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="folder_document" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\000500-folder-document.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERR610" xml:space="preserve">
+    <value>Write I2C failed.</value>
+  </data>
+  <data name="ERR602" xml:space="preserve">
+    <value>Read length illegal.</value>
+  </data>
+  <data name="ERR621" xml:space="preserve">
+    <value>Relay number error,should be '0' - '21'.</value>
+  </data>
+  <data name="ActivePowerOutOfRange" xml:space="preserve">
+    <value>Active power result is out of the error range.</value>
+  </data>
+  <data name="Item_CircuitBreakerControl1" xml:space="preserve">
+    <value>Circuit breaker control (1)</value>
+  </data>
+  <data name="Common_Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="BreakerTest" xml:space="preserve">
+    <value>Circuit breaker test</value>
+  </data>
+  <data name="IncompleteData" xml:space="preserve">
+    <value>Response data frame is incomplete.</value>
+    <comment>应答数据帧不完整.</comment>
+  </data>
+  <data name="ERR600" xml:space="preserve">
+    <value>BCC Error.</value>
+  </data>
+  <data name="TestInterface_CollapseRecord" xml:space="preserve">
+    <value>Collapse</value>
+  </data>
+  <data name="TimeOut" xml:space="preserve">
+    <value>Receive data timeout.</value>
+  </data>
+  <data name="Item_5Vvoltage" xml:space="preserve">
+    <value>5V voltage</value>
+  </data>
+  <data name="Common_Information" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="LoginDialog_UserNameEmpty" xml:space="preserve">
+    <value>Username can't be empty.</value>
+  </data>
+  <data name="ERR603" xml:space="preserve">
+    <value>Erase sector failed.</value>
+  </data>
+  <data name="cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\900300-cancel.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Item_PhaseBPowerConsumption" xml:space="preserve">
+    <value>Phase B power consumption</value>
+  </data>
+  <data name="ERR611" xml:space="preserve">
+    <value>Force program length illegal.</value>
+  </data>
+  <data name="IncorrectHeadOrTail" xml:space="preserve">
+    <value>Abnormal response data frame header or end of frame is incorrect.</value>
+    <comment>异常应答数据帧头帧尾不正确.</comment>
+  </data>
+  <data name="IncorrectResponse" xml:space="preserve">
+    <value>Response packet is incorrect.</value>
+    <comment>应答数据包不正确.</comment>
+  </data>
+  <data name="Landing_MeterTestItems" xml:space="preserve">
+    <value>Meter circuit board test items</value>
+  </data>
+  <data name="Item_485Voltage" xml:space="preserve">
+    <value>485 voltage</value>
+  </data>
+  <data name="LoginDialog_PasswordEmpty" xml:space="preserve">
+    <value>Password can't be empty.</value>
+  </data>
+  <data name="Item_RelayControl1" xml:space="preserve">
+    <value>Relay control (1)</value>
+  </data>
+  <data name="Item_PhaseAPowerConsumption" xml:space="preserve">
+    <value>Phase A power consumption</value>
+  </data>
+  <data name="NOOK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NOOK.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Item_RelayControl2" xml:space="preserve">
+    <value>Relay control (2)</value>
+  </data>
+  <data name="Item_StopReadingCurrent" xml:space="preserve">
+    <value>Stop reading current</value>
+  </data>
+  <data name="DCVolOutOfRange" xml:space="preserve">
+    <value>DC Voltage result is out of the error range.</value>
+    <comment>直流电压检测结果不在误差范围内.</comment>
+  </data>
+  <data name="Item_232Communication1" xml:space="preserve">
+    <value>232 communication (1)</value>
+  </data>
+  <data name="Item_PulseTest" xml:space="preserve">
+    <value>Pulse test</value>
+  </data>
+  <data name="Item_485Communication1" xml:space="preserve">
+    <value>485 communication (1)</value>
+  </data>
+  <data name="Item_AuxiliaryPowerSupply12Vvoltage" xml:space="preserve">
+    <value>Auxiliary power supply 12V voltage</value>
+  </data>
+  <data name="ERR620" xml:space="preserve">
+    <value>Open transparent channel failed.</value>
+  </data>
+  <data name="SerialPortNoOpen" xml:space="preserve">
+    <value>The serial port is not open.</value>
+  </data>
+  <data name="Item_BatteryCurrent1" xml:space="preserve">
+    <value>Battery current (1)</value>
+  </data>
+  <data name="PcbTesterClient_NoBoard" xml:space="preserve">
+    <value>The circuit board does not reply the frame to PC. Please check the hardware connection or check board status.</value>
+    <comment>未检测到检测板。</comment>
+  </data>
+  <data name="Item_232Communication2" xml:space="preserve">
+    <value>232 communication (2)</value>
+  </data>
+  <data name="Item_485Communication2" xml:space="preserve">
+    <value>485 communication (2)</value>
+  </data>
+  <data name="Item_RJ45PortVoltage1" xml:space="preserve">
+    <value>RJ45 port voltage (1)</value>
+  </data>
+  <data name="Item_PhaseCPowerConsumption" xml:space="preserve">
+    <value>Phase C power consumption</value>
+  </data>
+  <data name="Item_InfraredCommunication" xml:space="preserve">
+    <value>Infrared communication</value>
+  </data>
+  <data name="ERR605" xml:space="preserve">
+    <value>Write FLASH failed.</value>
+  </data>
+  <data name="LoginDialog_LoginFailed" xml:space="preserve">
+    <value>The username or password is incorrect.</value>
+  </data>
+  <data name="ERR617" xml:space="preserve">
+    <value>Baud rate error,should be:'300', '600', '1200', '2400', '4800', '9600', '19200' or '38400'.</value>
+  </data>
+  <data name="Item_BacklightVoltage" xml:space="preserve">
+    <value>Backlight voltage</value>
+  </data>
+  <data name="ERR609" xml:space="preserve">
+    <value>Read I2C failed.</value>
+  </data>
+  <data name="Item_AuxiliaryPowerSupply5Vvoltage" xml:space="preserve">
+    <value>Auxiliary power supply 5V voltage</value>
+  </data>
+  <data name="ERR003" xml:space="preserve">
+    <value>Command format error.</value>
+  </data>
+  <data name="ERR005" xml:space="preserve">
+    <value>Write only but received read command.</value>
+  </data>
+  <data name="Item_ExternalMagneticFieldTest1" xml:space="preserve">
+    <value>External magnetic field test (1)</value>
+  </data>
+  <data name="ACCurrentOutOfRange" xml:space="preserve">
+    <value>AC Current result is out of the error range.</value>
+  </data>
+  <data name="ERR616" xml:space="preserve">
+    <value>Com port error,should be: '485_1'， '485_2'，'232'，'GK'，'HW' or 'PLC'.</value>
+  </data>
+  <data name="ERR608" xml:space="preserve">
+    <value>I2C address illegal.</value>
+  </data>
+  <data name="Common_Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="MainForm_StartTest" xml:space="preserve">
+    <value>Start</value>
+  </data>
+  <data name="PagerControl_WrongPage" xml:space="preserve">
+    <value>Please fill in the correct page number.</value>
+  </data>
+  <data name="Item_RJ45PortVoltage2" xml:space="preserve">
+    <value>RJ45 port voltage (2)</value>
+  </data>
+  <data name="Item_SecondSignalTest" xml:space="preserve">
+    <value>Second signal test</value>
+  </data>
+  <data name="Item_485Communication3" xml:space="preserve">
+    <value>485 communication (3)</value>
+  </data>
+  <data name="ERR622" xml:space="preserve">
+    <value>Relay action error,should be 'open' or 'close'.</value>
+  </data>
+  <data name="Item_ForceProgramming" xml:space="preserve">
+    <value>Force programming</value>
+  </data>
+  <data name="Item_12Vvoltage" xml:space="preserve">
+    <value>12V voltage</value>
+  </data>
+  <data name="ERR606" xml:space="preserve">
+    <value>Write data illegal.</value>
+  </data>
+  <data name="ERR001" xml:space="preserve">
+    <value>Not supported command.</value>
+  </data>
+  <data name="ERR004" xml:space="preserve">
+    <value>Read only but received write command.</value>
+  </data>
+  <data name="IllegalData" xml:space="preserve">
+    <value>Illegal response data frame.</value>
+  </data>
+  <data name="SerialSettingsDialog_NoUsedPort" xml:space="preserve">
+    <value>No Serial port can be used.</value>
+  </data>
+  <data name="OK" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OK.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Item_AuxiliaryPowerSupply485voltage" xml:space="preserve">
+    <value>Auxiliary power supply 485 voltage</value>
+  </data>
+  <data name="ERR604" xml:space="preserve">
+    <value>Read FLASH failed.</value>
+  </data>
+  <data name="MainForm_StopTest" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="ERR614" xml:space="preserve">
+    <value>Range error,should be:'L','M' or 'S'.</value>
+  </data>
+  <data name="Item_BatteryCurrent2" xml:space="preserve">
+    <value>Battery current (2)</value>
+  </data>
+  <data name="PagerControl_LastPage" xml:space="preserve">
+    <value>Already the last page.</value>
+  </data>
+  <data name="ERR612" xml:space="preserve">
+    <value>Voltage pin number error,should be in '1'-'5'.</value>
+  </data>
+  <data name="Item_ExternalMagneticFieldTest2" xml:space="preserve">
+    <value>External magnetic field test (2)</value>
+  </data>
+  <data name="TestInterface_ExpandRecord" xml:space="preserve">
+    <value>Expand</value>
+  </data>
+  <data name="ok_900200" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\900200-ok.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERR619" xml:space="preserve">
+    <value>Parity bit error，should be:'N','E' or 'O'.</value>
+  </data>
+  <data name="Item_CircuitBreakerControl2" xml:space="preserve">
+    <value>Circuit breaker control (2)</value>
+  </data>
+  <data name="Item_OpticalCommunication" xml:space="preserve">
+    <value>Optical port communication</value>
+  </data>
+  <data name="ERR607" xml:space="preserve">
+    <value>Chip select code illegal.</value>
+  </data>
+  <data name="ERR618" xml:space="preserve">
+    <value>Data bit error, should be: '7'or '8'.</value>
+  </data>
+  <data name="ERR601" xml:space="preserve">
+    <value>FLASH address illegal.</value>
+  </data>
+  <data name="ERR615" xml:space="preserve">
+    <value>Phase error,should be:'A','B' or 'C'.</value>
+  </data>
+  <data name="ERR613" xml:space="preserve">
+    <value>Current pin number error,should be in '1'-'2'.</value>
+  </data>
+  <data name="DCCurrentOutOfRange" xml:space="preserve">
+    <value>DC Current result is out of the error range.</value>
+    <comment>直流电流检测结果不在误差范围内.</comment>
+  </data>
+  <data name="Landing_PowerTestItems" xml:space="preserve">
+    <value>Switching power board test items</value>
+  </data>
+  <data name="NullArguments" xml:space="preserve">
+    <value>Port name or baudrate cannot be null.</value>
+  </data>
+  <data name="ACVolOutOfRange" xml:space="preserve">
+    <value>AC Voltage result is out of the error range.</value>
+  </data>
+  <data name="landing" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5-121204193R5-50.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MainForm_InputMeterNumber" xml:space="preserve">
+    <value>Please input meter number.</value>
+  </data>
+  <data name="Result_Failed" xml:space="preserve">
+    <value>Unqualified</value>
+  </data>
+  <data name="Result_Success" xml:space="preserve">
+    <value>Qualified</value>
+  </data>
+  <data name="Common_Question" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="UserManageDialog_DeleteUser" xml:space="preserve">
+    <value>Are you sure you want to delete this user?</value>
+  </data>
+  <data name="Command_EraseSpiFlash" xml:space="preserve">
+    <value>Erase SPI Flash</value>
+  </data>
+  <data name="Command_ForceProgram" xml:space="preserve">
+    <value>Force Programming</value>
+  </data>
+  <data name="Command_MeasurePulse" xml:space="preserve">
+    <value>Measure Pulse</value>
+  </data>
+  <data name="Command_MeterCommunication" xml:space="preserve">
+    <value>Meter Communication</value>
+  </data>
+  <data name="Command_ReadI2C" xml:space="preserve">
+    <value>Read I2C</value>
+  </data>
+  <data name="Command_ReadSpiFlash" xml:space="preserve">
+    <value>Read SPI Flash</value>
+  </data>
+  <data name="Command_WriteI2C" xml:space="preserve">
+    <value>Write I2C</value>
+  </data>
+  <data name="Command_WriteSpiFlash" xml:space="preserve">
+    <value>Write SPI Flash</value>
+  </data>
+  <data name="ReadAddressCommandBase_ReadErrorMessageFormat" xml:space="preserve">
+    <value>{0} failed (Address = 0x{1:X8}, Length = {2}). Expected: {3}, Actual: {4}.</value>
+  </data>
+  <data name="Command_MeasureACCurrent" xml:space="preserve">
+    <value>Measure AC Current</value>
+  </data>
+  <data name="Command_MeasureActivePower" xml:space="preserve">
+    <value>Measure Active Power Command</value>
+  </data>
+  <data name="Command_MeasureACVoltage" xml:space="preserve">
+    <value>Measure AC Voltage</value>
+  </data>
+  <data name="Command_MeasureDCCurrent" xml:space="preserve">
+    <value>Measure DC Current</value>
+  </data>
+  <data name="Command_MeasureDCVoltage" xml:space="preserve">
+    <value>Measure DC Voltage</value>
+  </data>
+  <data name="MeasureCommandBase_MeasureErrorMessageFormat" xml:space="preserve">
+    <value>{0} failed (PinNumber = {1}, CurrentRange = {2}, Phase = {3}). Expected: {4}, Actual: {5}.</value>
+  </data>
+  <data name="ForceProgramDialog_CancelTransmit" xml:space="preserve">
+    <value>User has canceled transmission</value>
+  </data>
+  <data name="ForceProgramDialog_FramesCountFormat" xml:space="preserve">
+    <value>The total frames count: {0}, now: {1}</value>
+  </data>
+  <data name="ForceProgramDialog_ReadSpiCompleted" xml:space="preserve">
+    <value>Read from SPI Flash successfully</value>
+  </data>
+  <data name="ForceProgramDialog_WriteSpiCompleted" xml:space="preserve">
+    <value>Write to SPI Flash successfully</value>
+  </data>
+  <data name="MeasureCommandBase_ParseFailedMessageFormat" xml:space="preserve">
+    <value>Unable to parse measurement value. Expected: decimal + unit; Actual: {0}</value>
+  </data>
+  <data name="MeasureCommandBase_ReadResultFailedMessageFormat" xml:space="preserve">
+    <value>Failed to read measure result for {0} command: {1} Parameter: {2}.</value>
+  </data>
+  <data name="MeasureCommandBase_StartFailedMessageFormat" xml:space="preserve">
+    <value>Failed to start measuring for {0} command: {1} Parameter: {2}.</value>
+  </data>
+  <data name="ReadAddressCommandBase_ReadFailedMessageFormat" xml:space="preserve">
+    <value>Failed to read address for {0} command: {1}. Parameter: {2}.</value>
+  </data>
+  <data name="WriteAddressCommandBase_WriteFailedMessageFormat" xml:space="preserve">
+    <value>Failed to write address for {0} command: {1} Parameter: {2}.</value>
+  </data>
+  <data name="Command_RelayControl" xml:space="preserve">
+    <value>Relay control</value>
+  </data>
+  <data name="RelayControlCommand_WriteFailedMessageFormat" xml:space="preserve">
+    <value>Failed to set relay control parameter for {0} command: {1} Parameter: {2}.</value>
+  </data>
+  <data name="ForceProgramCommand_ForceProgramErrorMessageFormat" xml:space="preserve">
+    <value>{0} failed (1). Expected: {2}, Actual: {3}.</value>
+  </data>
+  <data name="ForceProgramCommand_WriteFailedMessageFormat" xml:space="preserve">
+    <value>Failed to set parameter for {0} command: {1} Parameter: {2}.</value>
+  </data>
+  <data name="ForceProgramDialog_CRC32Failed" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ForceProgramDialog_CRC32Success" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MeterCommunicationCommand_WriteFailedMessageFormat" xml:space="preserve">
+    <value>Failed to communicate with meter for {0} command: {1}. Parameter: {2}.</value>
+  </data>
+  <data name="MainForm_NoUser" xml:space="preserve">
+    <value>Can't find the user.</value>
+  </data>
+  <data name="ForceProgramCommand_ChipNumberIllegal" xml:space="preserve">
+    <value>SPI chip number should be between 1-5.</value>
+  </data>
+  <data name="ForceProgramCommand_LengthIllegal" xml:space="preserve">
+    <value>kBytes should be 32 or 64.</value>
+  </data>
+  <data name="Command_SecondSignalCalibration" xml:space="preserve">
+    <value>Second signal calibration</value>
+  </data>
+  <data name="ProfileManager_NoProfile" xml:space="preserve">
+    <value>Profile for this test item was not found.</value>
+  </data>
+  <data name="SecondSignalCalibrationCommand_MeasureErrorMessageFormat" xml:space="preserve">
+    <value>{0} failed ({1}). Expected: {2}, Actual: {3}.</value>
+  </data>
+  <data name="SecondSignalCalibrationCommand_ReadResultFailedMessageFormat" xml:space="preserve">
+    <value>Failed to read second result for {0} command: {1} Parameter: {2}.</value>
+  </data>
+  <data name="SecondSignalCalibrationCommand_WriteFailedMessageFormat" xml:space="preserve">
+    <value>Failed to start testing second for {0} command: {1} Parameter: {2}.</value>
+  </data>
+  <data name="MeterCommunicationCommand_CommErrorMessageFormat" xml:space="preserve">
+    <value>{0} failed ({1}). Expected: {2}, Actual: {3}.</value>
+  </data>
+  <data name="SecondSignalCalibrationCommand_NoValue" xml:space="preserve">
+    <value>There is no clock signal value.</value>
+  </data>
+</root>

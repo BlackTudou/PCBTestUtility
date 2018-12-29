@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 15 for Windows Desktop
+VisualStudioVersion = 15.0.28010.2041
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCBTestUtility", "PCBTestUtility.csproj", "{7D349C2F-2A52-48E2-97C6-4DE82C31BE88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PCBTestUtility.Test", "..\PCBTestUtilityTest\PCBTestUtility.Test.csproj", "{A9F8ECF2-06EA-42F9-93A0-A07037B2CCE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D349C2F-2A52-48E2-97C6-4DE82C31BE88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D349C2F-2A52-48E2-97C6-4DE82C31BE88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D349C2F-2A52-48E2-97C6-4DE82C31BE88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D349C2F-2A52-48E2-97C6-4DE82C31BE88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A9F8ECF2-06EA-42F9-93A0-A07037B2CCE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9F8ECF2-06EA-42F9-93A0-A07037B2CCE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A9F8ECF2-06EA-42F9-93A0-A07037B2CCE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9F8ECF2-06EA-42F9-93A0-A07037B2CCE4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0CB6176E-68FA-42AB-ACD0-39394A47080E}
+	EndGlobalSection
+EndGlobal
